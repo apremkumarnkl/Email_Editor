@@ -1,0 +1,17 @@
+﻿<div data-ng-controller="shell as vm">
+    <div data-ng-include="'app/layout/header.html'"></div>
+	
+    <div id="wrapper" class="open-right-panel">
+        <div class="row">
+			<div class="col-md-2">
+				<div data-ng-include="'app/sidebar/sidebar.html'"></div>
+			</div>
+			<div class="col-md-10">
+				<div data-ng-view></div>
+			</div>
+		</div>	
+    </div>
+    <div pb-properties-panel></div>
+    <div id="right-panel" class="properties-panel open-right-bar" pb-properties component="$root.activeComponent">
+    </div>
+</div>
